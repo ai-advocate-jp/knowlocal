@@ -1,0 +1,68 @@
+# --- Excluded projects / non-public content ---
+# env-pdf/ is a separate project (KnowLocal) already managed in its own
+# git repository (remote: ai-advocate-jp/knowlocal-src). Do not track it here.
+env-pdf/
+
+# Large archive, not meant for source control
+pdf-rag.zip
+
+# Internal planning document (odt)
+RAGのあり方.odt
+
+# Inbox processing directory (runtime data, not source)
+inbox/
+
+# Personal working memo
+コマンド
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+*/bin/activate
+pyvenv.cfg
+
+# --- Secrets / environment configuration ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+access_control.json
+!access_control.example.json
+
+# --- Models / indexes / embeddings (large binary artifacts) ---
+*.faiss
+*.index
+*.pkl
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.onnx
+*.npz
+
+# --- Logs / temp files ---
+*.log
+*.tmp
+*.bak
+logs/
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
